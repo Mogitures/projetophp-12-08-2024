@@ -1,11 +1,25 @@
 <?php 
 
-	$num1 = 10;
-	$num2 = 20;
-	$resp = 0;
+	$op = 7;
 
-	$resp = $num1 + $num2;
+	echo "<h1>Escolha:</h1><div style=color: #333333';><h3><p><p>1 - banana<p>2 - laranja<p> 3 - abacaxi<p> 4 - sair</h3></div>";
+	switch ($op) {
+		case '1':
+			echo "Você escolheu banana!";
+			break;
+		case '2':
+			echo "Você escolheu laranja!";
+			break;
+		case '3':
+			echo "Você escolheu abacaxi!";
+			break;
+		case '4':
+			echo "Você saiu.";
+			break;
 
-	echo "<i><s><b><p style='font-size: 12px';>A soma é " . $resp . "</p></b></s></i>";
+		default:
+			echo "Você não escolheu nada filho.";
+			break;
+	}
 
 ?>
